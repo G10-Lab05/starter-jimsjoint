@@ -1,5 +1,6 @@
 # Project Changelog
 >Template: YYYY-MM-DD HH:MM - Comment
 
+2016-02-11 13:55 - step 3 done. New Order is fixed.
 2016-02-11 13:03 - configuration is fixed.
 2016-02-11 12:31 - Initial Changelog
