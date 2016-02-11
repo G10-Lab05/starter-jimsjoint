@@ -2,10 +2,26 @@
 Winter 2016 Lab 05
 ###############
 
-This project is the starter for ACIT4850 Lab 4, for the Winter 2016 session.
+*******************
+Group 10 Team Members
+*******************
 
-This webapp is broken. On purpose :) 
-Your job is to fix it, following the directions in lab 05.
+* Yoseph  Jo  
+* Joti    Lalli
+
+*******************
+Base Requirements
+*******************
+
+* CodeIgniter Framework in `../system3/` folder
+
+*******************
+Assumptions
+*******************
+
+* Allman-style formatting
+* changelog to have newest timestamp first,
+* use date & time stamping of [YYYY-MM-DD HH:MM - comment]
 
 *******************
 Server Requirements
