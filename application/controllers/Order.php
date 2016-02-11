@@ -20,17 +20,14 @@ class Order extends Application
 	// start a new order
 	function neworder()
 	{
-		Active_record::highest();	//returns the highest key used in a model/table
-		Active_record::create();	//creates a new record
-		
 		$order_num = $this->Orders->highest() + 1;	//gived the last order # used
-
+		
 		$neworder = $this->Orders->create();
 		$neworder->num = $order_num;
 		$neworder->date = date();
 		$neworder->status = 'a';
 		$neworder->total = 0;
-		$this->orders->add($neworder);
+		$this->Orders->add($neworder);
 
 		redirect('/order/display_menu/' . $order_num);
 	}
