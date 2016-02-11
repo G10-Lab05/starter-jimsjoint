@@ -1,11 +1,11 @@
 ###############
-Fall2015 lab 04
+Winter 2016 Lab 05
 ###############
 
-This project is the starter for COMP4711 Lab 4, for the Fall 2015 session.
+This project is the starter for ACIT4850 Lab 4, for the Winter 2016 session.
 
 This webapp is broken. On purpose :) 
-Your job is to fix it, following the directions in lab 04.
+Your job is to fix it, following the directions in lab 05.
 
 *******************
 Server Requirements
