@@ -23,8 +23,8 @@ class Welcome extends Application {
 		$this->data['title'] = 'Jim\'s Joint!';
 		$this->data['pagebody'] = 'welcome';
 
-		// Get all the completed orders
-		//FIXME
+        // Get all the completed orders
+         $completed = $this -> Orders -> some('status','c');
 
 		// Build a multi-dimensional array for reporting
 		$orders = array();
