@@ -108,16 +108,26 @@ class Order extends Application
 	}
 
 	// proceed with checkout
-	function proceed($order_num)
+	function commit($order_num)
 	{
-		//FIXME
+		if (!$this->Orders->validate($order_num))
+		{
+			redirect('/order/display_menu/' . $order_num);
+		}
+		$record = $this->Orders->get($order_num);
+		$record->date = date(DATE_ATOM);
+		$record->status = 'c';
+		$record->total = $this->Orders->total($order_num);
+		$this->Orders->update($record);
 		redirect('/');
 	}
 
 	// cancel the order
 	function cancel($order_num)
 	{
-		//FIXME
+		$this->Orderitems->delete_some($order_num);
+		$record = $this->Orders->get($order_num);
+		$record->status->update($record);
 		redirect('/');
 	}
 

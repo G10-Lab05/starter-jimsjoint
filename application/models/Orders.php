@@ -31,7 +31,7 @@ class Orders extends MY_Model {
 		}
 	}
 
-    // calculate the total for an order
+	// calculate the total for an order
 	function total($num)
 	{
 		$CI = & get_instance();
@@ -47,19 +47,18 @@ class Orders extends MY_Model {
 			return $result;
 	}
 
-    // retrieve the details for an order
-    function details($num) {
-        
-    }
+	// retrieve the details for an order
+	function details($num) {
+		
+	}
 
-    // cancel an order
-    function flush($num) {
-        
-    }
+	// cancel an order
+	function flush($num) {
+	}
 
-    // validate an order
-    // it must have at least one item from each category
-    function validate($num)
+	// validate an order
+	// it must have at least one item from each category
+	function validate($num)
 	{
 		$CI = & get_instance();
 		$items = $CI->Orderitems->group($num);
@@ -72,6 +71,6 @@ class Orders extends MY_Model {
 			$gotem[$menu->category] = 1;
 			}
 		}
-		return isset($gotem[ 'm' ]) && isset($gotem[ 'd' ]) && isset($gotem[ ' s']);
+		return isset($gotem[ 'm' ]) && isset($gotem[ 'd' ]) && isset($gotem[ 's']);
 	}
 }
