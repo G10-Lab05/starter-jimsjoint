@@ -1,6 +1,7 @@
 # Project Changelog
 >Template: YYYY-MM-DD HH:MM - Comment
 
+2016-02-11 16:44 - Lab 05 using models is done.
 2016-02-11 16:20 - step 6 completed validate and checkout
 2016-02-11 14:50 - step 5 completed. Orders::add_item is fixed. Web works as expected :)
 2016-02-11 14:50 - step 4 completed.
